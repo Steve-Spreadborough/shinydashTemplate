@@ -34,6 +34,9 @@ re using R6 class objects for data storage.
 app uses this data purely as example data and the outputs including in
 this graph are for demonstration/exploration of code purposes only.
 
+A more developed version using `bslibs` can be found
+[here](https://github.com/Steve-Spreadborough/shinyTemplate)
+
 As a basic, this application includes the following set up:
 
 - Code structure following `{golem}`
@@ -63,7 +66,7 @@ This README has been compiled on the
 
 ``` r
 Sys.time()
-#> [1] "2025-01-07 20:41:04 GMT"
+#> [1] "2025-01-21 10:45:02 GMT"
 ```
 
 Here are the tests results and package coverage:
@@ -72,18 +75,25 @@ Here are the tests results and package coverage:
 devtools::check(quiet = TRUE)
 #> ℹ Loading shinyTemplate
 #> ── R CMD check results ─────────────────────────── shinyTemplate 0.0.0.9000 ────
-#> Duration: 1m 36.1s
+#> Duration: 16.8s
 #> 
-#> 0 errors ✔ | 0 warnings ✔ | 0 notes ✔
+#> ❯ checking package dependencies ... ERROR
+#>   Namespace dependency missing from DESCRIPTION Imports/Depends entries: 'DT'
+#>   
+#>   See section 'The DESCRIPTION file' in the 'Writing R Extensions'
+#>   manual.
+#> 
+#> 1 error ✖ | 0 warnings ✔ | 0 notes ✔
+#> Error: R CMD check found ERRORs
 ```
 
 ``` r
 covr::package_coverage()
-#> shinyTemplate Coverage: 64.89%
+#> shinyTemplate Coverage: 62.94%
 #> R/run_app.R: 0.00%
 #> R/server_utils.R: 0.00%
 #> R/mod_date_filter.R: 48.39%
-#> R/mod_explore_data.R: 63.64%
+#> R/mod_explore_data.R: 57.08%
 #> R/app_config.R: 100.00%
 #> R/app_r6.R: 100.00%
 #> R/app_server.R: 100.00%

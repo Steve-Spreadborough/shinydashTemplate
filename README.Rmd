@@ -43,6 +43,9 @@ re using R6 class objects for data storage.
 this data purely as example data and the outputs including in this graph are
 for demonstration/exploration of code purposes only.
 
+A more developed version using `bslibs` can be found 
+[here](https://github.com/Steve-Spreadborough/shinyTemplate)
+
 As a basic, this application includes the following set up:
 
 - Code structure following `{golem}`
