@@ -38,12 +38,11 @@ shiny apps with `{golem}` and
 [here](https://engineering-shiny.org/common-app-caveats.html?q=R6#using-r6-as-data-storage)
 re using R6 class objects for data storage.
 
-**Important**: This app uses data from the `stats19` package, 
-[here](https://github.com/ropensci/stats19), containing crash data. The app uses
-this data purely as example data and the outputs including in this graph are
-for demonstration/exploration of code purposes only.
+**Important**: This app uses data from the `stats19` package,
+[here](https://github.com/ropensci/stats19), containing crash data. The
+app uses this data purely as example data and the **outputs included in this App are for demonstration/exploration of code purposes only and are not official analysis of the data**.
 
-A more developed version using `bslibs` can be found 
+**NOTE:** A more developed version using `bslibs` can be found 
 [here](https://github.com/Steve-Spreadborough/shinyTemplate)
 
 As a basic, this application includes the following set up:

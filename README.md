@@ -31,10 +31,11 @@ re using R6 class objects for data storage.
 
 **Important**: This app uses data from the `stats19` package,
 [here](https://github.com/ropensci/stats19), containing crash data. The
-app uses this data purely as example data and the outputs including in
-this graph are for demonstration/exploration of code purposes only.
+app uses this data purely as example data and the **outputs included in
+this App are for demonstration/exploration of code purposes only and are
+not official analysis of the data**.
 
-A more developed version using `bslibs` can be found
+**NOTE:** A more developed version using `bslibs` can be found
 [here](https://github.com/Steve-Spreadborough/shinyTemplate)
 
 As a basic, this application includes the following set up:
@@ -66,7 +67,7 @@ This README has been compiled on the
 
 ``` r
 Sys.time()
-#> [1] "2025-01-21 10:45:02 GMT"
+#> [1] "2025-01-29 09:25:47 GMT"
 ```
 
 Here are the tests results and package coverage:
@@ -75,16 +76,9 @@ Here are the tests results and package coverage:
 devtools::check(quiet = TRUE)
 #> ℹ Loading shinyTemplate
 #> ── R CMD check results ─────────────────────────── shinyTemplate 0.0.0.9000 ────
-#> Duration: 16.8s
+#> Duration: 1m 34.3s
 #> 
-#> ❯ checking package dependencies ... ERROR
-#>   Namespace dependency missing from DESCRIPTION Imports/Depends entries: 'DT'
-#>   
-#>   See section 'The DESCRIPTION file' in the 'Writing R Extensions'
-#>   manual.
-#> 
-#> 1 error ✖ | 0 warnings ✔ | 0 notes ✔
-#> Error: R CMD check found ERRORs
+#> 0 errors ✔ | 0 warnings ✔ | 0 notes ✔
 ```
 
 ``` r
